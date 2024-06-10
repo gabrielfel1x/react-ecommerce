@@ -13,7 +13,7 @@ export default {
       },
     },
     fontFamily: {
-      primary: "Poppins",
+      primary: "Recursive",
       secondary: "Pacifico",
     },
   },

@@ -10,26 +10,22 @@ interface Products {
 
 const initialState: Array<Products> = [];
 
-export const cartSlice = createSlice({
+const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
     addToCart: (state, action: PayloadAction<Products>) => {
-      if (
-        state.findIndex((products) => products.id === action.payload.id) === -1
-      ) {
+      const existingProduct = state.find(
+        (product) => product.id === action.payload.id
+      );
+      if (!existingProduct) {
         state.push(action.payload);
       } else {
-        return state.map((item) => {
-          return item.id === action.payload.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item;
-        });
+        existingProduct.quantity += 1;
       }
     },
     removeProduct: (state, action: PayloadAction<number>) => {
-      const id = action.payload;
-      return state.filter((item) => item.id !== id);
+      return state.filter((product) => product.id !== action.payload);
     },
   },
 });
