@@ -9,11 +9,11 @@ const Cart: React.FC<CartProps> = ({ setOpenCart }) => {
 
   const getTotal = () => {
     let total = 0;
-    products.forEach(
-      (item) =>
-        (total = total + Math.ceil(item.price * 0.9) * item.quantity + 1)
-    );
-    return total;
+    products.forEach((item) => {
+      total += item.price * item.quantity;
+    });
+    const totalWithDiscount = Math.ceil(total * 0.9);
+    return totalWithDiscount;
   };
 
   return (
