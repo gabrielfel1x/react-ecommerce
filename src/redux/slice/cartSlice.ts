@@ -23,9 +23,14 @@ const cartSlice = createSlice({
       } else {
         existingProduct.quantity += 1;
       }
+      console.log("Product added:", action.payload);
+      console.log("Current state:", state);
     },
     removeProduct: (state, action: PayloadAction<number>) => {
-      return state.filter((product) => product.id !== action.payload);
+      const newState = state.filter((product) => product.id !== action.payload);
+      console.log("Product removed:", action.payload);
+      console.log("Current state:", newState);
+      return newState;
     },
   },
 });

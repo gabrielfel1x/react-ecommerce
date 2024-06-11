@@ -16,8 +16,8 @@ const Cart: React.FC<CartProps> = ({ setOpenCart }) => {
   };
 
   return (
-    <div className="fixed left-0 top-0 z-20 overflow-y-scroll bg-transparent w-full min-h-screen">
-      <div className="max-w-[400px] w-full min-h-full bg-white absolute right-0 top-0 p-6">
+    <div className="fixed left-0 top-0 z-20 w-full min-h-screen pointer-events-none">
+      <div className="max-w-[400px] w-full min-h-full bg-white absolute right-0 top-0 p-6 pointer-events-auto">
         <RxCross1
           onClick={() => {
             setOpenCart(false);
