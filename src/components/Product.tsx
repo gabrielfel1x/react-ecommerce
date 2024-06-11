@@ -83,10 +83,11 @@ const Product = () => {
         {products.map((product) => (
           <ProductCart
             key={product.id}
+            id={product.id}
             img={product.img}
             category={product.category}
             title={product.title}
-            price={product.title}
+            price={product.price}
           />
         ))}
       </div>
