@@ -50,7 +50,7 @@ const ProductCart = ({ id, img, title, category, price }: Product) => {
             </div>
             <p className="text-gray-600 text-sm">(3 review)</p>
             <div className="ml-20">
-              <h2 className="font-medium text-primary text-xl">${price}</h2>
+              <h2 className="font-medium text-primary text-xl">R${price}</h2>
             </div>
           </div>
         </div>

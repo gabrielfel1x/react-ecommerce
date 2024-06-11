@@ -10,7 +10,8 @@ const Cart: React.FC<CartProps> = ({ setOpenCart }) => {
   const getTotal = () => {
     let total = 0;
     products.forEach(
-      (item) => (total = total + Math.ceil(item.price * 0.9) * item.quantity)
+      (item) =>
+        (total = total + Math.ceil(item.price * 0.9) * item.quantity + 1)
     );
     return total;
   };
@@ -41,7 +42,7 @@ const Cart: React.FC<CartProps> = ({ setOpenCart }) => {
         </div>
         <div className="flex justify-between items-center font-medium text-xl py-4">
           <p>Total</p>
-          <p>${getTotal()}.00</p>
+          <p>R${getTotal()}.00</p>
         </div>
         <div>
           <button className="bg-primary text-white text-center w-full rounded-md py-2 hover:text-primary hover:bg-white my-4">

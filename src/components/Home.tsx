@@ -12,7 +12,7 @@ function Home() {
             <h3 className="text-2xl font-semibold">
               Valentin's day special offer{" "}
               <span className="text-primary font-secondary font-medium">
-                9% discount
+                10% discount
               </span>
             </h3>
             <a
