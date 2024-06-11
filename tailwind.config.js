@@ -7,6 +7,11 @@ export default {
         "max-md": { max: "767px" },
       },
       colors: {
+        white: "#faf3e7",
+        primary: "#fb002e",
+        secondary: "#ffc3dc",
+        tertiary: "#ffa1b2",
+        primaryHover: "#c80025",
         headingFirst: "#010f1c",
         headingSecondary: "#021d35",
       },
@@ -17,7 +22,7 @@ export default {
     },
     fontFamily: {
       primary: "Recursive",
-      secondary: "Pacifico",
+      secondary: "Poppins",
     },
   },
   plugins: [],
