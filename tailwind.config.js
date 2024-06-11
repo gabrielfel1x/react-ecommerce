@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      images: {
+        banner2: 'url("./src/assets/banner.png")',
+      },
       screens: {
         "max-md": { max: "767px" },
       },

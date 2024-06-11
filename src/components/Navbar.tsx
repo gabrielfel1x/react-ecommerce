@@ -1,8 +1,10 @@
 import { AiOutlineUser } from "react-icons/ai";
 import { FiShoppingCart } from "react-icons/fi";
 import { useAppSelector } from "../redux/hooks";
+import React from "react";
+import { CartProps } from "../types";
 
-const Navbar = () => {
+const Navbar: React.FC<CartProps> = ({ setOpenCart }) => {
   const count = useAppSelector((store) => store.cart.length);
 
   return (
@@ -14,7 +16,12 @@ const Navbar = () => {
           </h1>
           <div className="flex gap-4 md:gap-8 items-center">
             <div className="md:flex items-center gap-6 hidden">
-              <div className="text-primary text-3xl relative cursor-pointer">
+              <div
+                onClick={() => {
+                  setOpenCart(true);
+                }}
+                className="text-primary text-3xl relative cursor-pointer"
+              >
                 <FiShoppingCart />
                 <div className="absolute -top-3 -right-2 bg-red-500 w-5 h-5 rounded-full text-white text-sm flex items-center justify-center">
                   {count}

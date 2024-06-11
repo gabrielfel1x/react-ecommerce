@@ -40,8 +40,8 @@ const ProductCart = ({ id, img, title, category, price }: Product) => {
             </div>
           </div>
         </div>
-        <div className="flex w-full justify-center rounded-lg items-center bg-primary text-white px-4 py-2 cursor-pointer hover:bg-primaryHover">
-          <AiOutlineShoppingCart /> Add To Cart
+        <div className="flex gap-x-3 w-full justify-center rounded-lg items-center bg-primary text-white mt-2 px-4 py-2 cursor-pointer hover:bg-primaryHover">
+          <AiOutlineShoppingCart className="text-2xl" /> Add To Cart
         </div>
       </div>
     </div>
