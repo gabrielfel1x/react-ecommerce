@@ -11,21 +11,15 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <h1 className=" text-4xl font-extrabold cursor-pointer">Shopping</h1>
           <div className="flex gap-4 md:gap-8 items-center">
-            <div className="md:flex items-center gap-3 hidden">
+            <div className="md:flex items-center gap-6 hidden">
+              <div className="text-gray-500 text-3xl relative cursor-pointer">
+                <FiShoppingCart />
+                <div className="absolute -top-3 -right-2 bg-red-500 w-5 h-5 rounded-full text-white text-sm flex items-center justify-center">
+                  {count}
+                </div>
+              </div>
               <div className="rounded-full border-2 border-gray-300 text-gray-500 text-3xl w-12 h-12 flex items-center justify-center cursor-pointer hover:bg-gray-200 transision-all duration-200">
                 <AiOutlineUser />
-              </div>
-
-              <div>
-                <a href="#" className="text-gray-500">
-                  Sign In
-                </a>
-              </div>
-            </div>
-            <div className="text-gray-500 text-3xl relative cursor-pointer">
-              <FiShoppingCart />
-              <div className="absolute -top-3 -right-2 bg-red-500 w-5 h-5 rounded-full text-white text-sm flex items-center justify-center">
-                {count}
               </div>
             </div>
           </div>
