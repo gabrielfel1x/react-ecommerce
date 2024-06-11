@@ -11,6 +11,7 @@ export default {
         primary: "#fb002e",
         secondary: "#ffc3dc",
         tertiary: "#ffa1b2",
+        cards: "#f5ebda",
         primaryHover: "#c80025",
         headingFirst: "#010f1c",
         headingSecondary: "#021d35",
