@@ -41,7 +41,7 @@ const ProductCart = ({ id, img, title, category, price }: Product) => {
         </div>
         <div className="mt-3 flex items-center justify-between text-[#ffb21d] w-full">
           <div className="flex items-center">
-            <div className="flex -ml-4">
+            <div className="flex -ml-2">
               <AiFillStar />
               <AiFillStar />
               <AiFillStar />
@@ -49,7 +49,7 @@ const ProductCart = ({ id, img, title, category, price }: Product) => {
               <AiOutlineStar />
             </div>
             <p className="text-gray-600 text-sm">(3 review)</p>
-            <div className="ml-8">
+            <div className="ml-20">
               <h2 className="font-medium text-primary text-xl">${price}</h2>
             </div>
           </div>

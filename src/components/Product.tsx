@@ -7,63 +7,62 @@ import image6 from "../assets/6.jpeg";
 import image7 from "../assets/7.jpeg";
 import image8 from "../assets/8.jpeg";
 import ProductCart from "./ProductCart";
-// import image9 from "../assets/9.jpeg";
 
 const products = [
   {
     id: 1,
     img: image1,
-    title: "Product Cool",
-    category: "Hygiene product",
+    title: "Product",
+    category: "Jewelry Product",
     price: "110.00",
   },
   {
     id: 2,
     img: image2,
-    title: "Product Cool",
-    category: "Hygiene product",
+    title: "Product",
+    category: "Jewelry Product",
     price: "110.00",
   },
   {
     id: 3,
     img: image3,
-    title: "Product Cool",
-    category: "Hygiene product",
+    title: "Product",
+    category: "Jewelry Product",
     price: "110.00",
   },
   {
     id: 4,
     img: image4,
-    title: "Product Cool",
-    category: "Hygiene product",
+    title: "Product",
+    category: "Jewelry Product",
     price: "110.00",
   },
   {
     id: 5,
     img: image5,
-    title: "Product Cool",
-    category: "Hygiene product",
+    title: "Product",
+    category: "Jewelry Product",
     price: "110.00",
   },
   {
     id: 6,
     img: image6,
-    title: "Product Cool",
-    category: "Hygiene product",
+    title: "Product",
+    category: "Jewelry Product",
     price: "110.00",
   },
   {
     id: 7,
     img: image7,
-    title: "Product Cool",
-    category: "Hygiene product",
+    title: "Product",
+    category: "Jewelry Product",
     price: "110.00",
   },
   {
     id: 8,
     img: image8,
-    title: "Product Cool",
-    category: "Hygiene product",
+    title: "Product",
+    category: "Jewelry Product",
     price: "110.00",
   },
 ];

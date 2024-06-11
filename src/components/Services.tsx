@@ -9,22 +9,22 @@ const Services = () => {
     {
       icon: <ImTruck className="text-4xl" />,
       title: "Free Delivery",
-      desc: "Orders from all item",
+      desc: "Lorem Ipsum is simply dummy",
     },
     {
       icon: <SiMoneygram className="text-4xl" />,
       title: "Return & Refund",
-      desc: "Mone back guarantee",
+      desc: "Lorem Ipsum is simply dummy",
     },
     {
       icon: <MdDiscount className="text-4xl" />,
       title: "Member Discount",
-      desc: "On Order Over $99.00",
+      desc: "Lorem Ipsum is simply dummy",
     },
     {
       icon: <MdSupportAgent className="text-4xl" />,
       title: "Suppor 24/7",
-      desc: "Contact us 24 hours a day",
+      desc: "Lorem Ipsum is simply dummy",
     },
   ];
 
